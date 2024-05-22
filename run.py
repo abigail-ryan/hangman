@@ -46,6 +46,62 @@ while True:
         print("Invalid option.")
 
 
+def print_hangman(wrong):
+    """
+    Prints hangman sections depending on number of wrong letters guessed.
+    """
+    if (wrong == 0):
+        print("+---+ ")
+        print("|      ")
+        print("|      ")
+        print("|      ")
+        print("|      ")
+        print("========")
+     elif (wrong == 1):
+        print("+---+ ")
+        print("|   0  ")
+        print("|      ")
+        print("|      ")
+        print("|      ")
+        print("========")
+    elif (wrong == 2):
+        print("+---+ ")
+        print("|   0  ")
+        print("|   |  ")
+        print("|      ")
+        print("|      ")
+        print("========")
+    elif (wrong == 3):
+        print("+---+ ")
+        print("|   0  ")
+        print("|  /|  ")
+        print("|      ")
+        print("|      ")
+        print("========")
+    elif (wrong == 4):
+        print("+---+ ")
+        print("|   0  ")
+        print("|  /|\ ")
+        print("|      ")
+        print("|      ")
+        print("========")
+    elif (wrong == 5):
+        print("+---+ ")
+        print("|   0  ")
+        print("|  /|\ ")
+        print("|  /   ")
+        print("|      ")
+        print("========")
+    elif (wrong == 6):
+        print("+---+ ")
+        print("|   0  ")
+        print("|  /|\ ")
+        print("|  / \ ")
+        print("|      ")
+        print("========")
+
+
+def play_game()
 
        
 
