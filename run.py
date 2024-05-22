@@ -1,6 +1,14 @@
+import random
+
+word_bank = ["elephant", "computer", "sunshine", "butterfly", "adventure", "chocolate", 
+"rainbow", "guitar", "ocean", "watermelon", "universe", "mountain", "fireworks", "friendship",
+ "beach", "pizza", "dragon", "galaxy", "starfish", "vacation", "jelly", "jungle", "mystery", 
+ "serenity", "waterfall", "wonderland", "carnival", "treasure", "dreamcatcher", "lighthouse", 
+ "mermaid", "whisper", "adventure", "harmony", "midnight", "symphony", "twilight", "whisper", "blossom",
+ "enchanted", "radiance", "velvet", "bird", "fish", "moon", "star", "tree", "rain", "book", "time"]
+
 
 print("Welcome to ")
-
 
 def print_logo():
     """
@@ -38,12 +46,7 @@ while True:
         print("Invalid option.")
 
 
-word_bank = ["elephant", "computer", "sunshine", "butterfly", "adventure", "chocolate", 
-"rainbow", "guitar", "ocean", "watermelon", "universe", "mountain", "fireworks", "friendship",
- "beach", "pizza", "dragon", "galaxy", "starfish", "vacation", "jelly", "jungle", "mystery", 
- "serenity", "waterfall", "wonderland", "carnival", "treasure", "dreamcatcher", "lighthouse", 
- "mermaid", "whisper", "adventure", "harmony", "midnight", "symphony", "twilight", "whisper", "blossom",
- "enchanted", "radiance", "velvet", "bird", "fish", "moon", "star", "tree", "rain", "book", "time"]
+
        
 
 
