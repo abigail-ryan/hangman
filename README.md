@@ -1,32 +1,125 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# HANGMAN
+[View my live app here](https://)
 
-Welcome,
+The popular pen and paper word guessing game, Hangman, can now be played in digital format using my Python project. Users play a random word every time, and have limited guesses to get it right.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+PLACE SCREENGRAB HERE…
 
-## Reminders
+## Contents
+* [Project Goals](#project-goals)
+  * [Primary Goal](#primary-goal)
+  * [Visitor Goals](#visitor-goal)
+* [User Stories](#user-stories)
+* [UX Design](#ux-design)
+  * [Strategy](#strategy)
+  *	[Scope](#scope)
+  * [Structure](#structure)
+  * [Skeleton](#skeleton)
+    * [Flowchart](#flowchart)
+  * [Surface](#surface)
+* [Page Features](#page-features)
+  * [Welcome](#welcome)
+  * [Game](#game)
+  * [Game Over](#game-over)
+  * [Validating User input](#validating-user-input)
+* [Future Features](#future-features)
+* [Technologies Used](#technologies-used)
+  * [Languages](#languages)
+  * [Frameworks, Libraries, Technologies and Programs used](#frameworks-libraries-technologies-and-programs-used)
+* [Testing](#testing)
+* [Deployment](#deployment)
+  * [Deploying to Heroku](#Deploying-to-heroku)
+  * [Forking the GitHub Repository](#forking-the-github-repository)
+  * [Clone the GitHub Repository](#clone-the-github-repository)
+* [Credits](#credits)
+  * [Content and Code References](#content-and-code-references)
+* [Acknowledgements](#acknowledgements)  
+         
+ 
+___
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+### Project Goals
 
-## Creating the Heroku app
+#### Primary Goal
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+#### Visitor Goal
 
-1. `heroku/python`
-2. `heroku/nodejs`
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+___
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+### User Stories
 
-Connect your GitHub repository and deploy as normal.
 
-## Constraints
+___
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+### UX Design
 
----
+#### Strategy
 
-Happy coding!
+#### Scope
+
+#### Structure
+
+#### Skeleton
+##### Flowchart
+
+#### Surface
+
+
+
+___
+
+### Page Features
+
+#### Welcome
+
+#### Game
+
+#### Game Over
+
+#### Validating User input
+
+
+___
+
+### Future Features
+
+
+___
+
+### Technologies Used
+
+#### Languages
+
+#### Frameworks, Libraries, Technologies and Programs used
+
+
+___
+
+### Testing
+
+
+___
+
+### Deployment
+
+#### Deploying to Heroku
+
+#### Forking the GitHub Repository
+
+#### Clone the GitHub Repository
+
+
+___
+
+### Credits
+
+#### Content and Code References
+
+
+___
+
+### Acknowledgements
+
+
+___
