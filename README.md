@@ -42,12 +42,24 @@ ___
 
 #### Primary Goal
 
+The goal is to create an interactive and entertaining word guessing game for users of all ages to play online, with the traditional Hangman artwork. Each game will generate a random word and ask the player to guess a letter. Players will be prompted when the letter they guessed is not part of the hidden word to try again, and congratulated when their guess is correct. The amount of remaining guesses decreases with every wrong guess and a new piece of the Hangman is added. When the Hangman is complete, players have lost the game. 
+
 #### Visitor Goal
+
+Visitors to Hangman will be able to play a digital version of the traditional Hangman game against the computer. 
 
 
 ___
 
 ### User Stories
+
+* A user can easily identify what that this is a Hangman game.
+* A user can understand the game rules.
+* A user can choose to start the game when they are ready.
+* A user is provided with clear instructions throughout the game.
+* A user can immediately see if their guess is correct/incorrect.
+* A user can exit the game at any point.
+* A user can start the game over again.
 
 
 ___
