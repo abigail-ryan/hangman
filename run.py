@@ -24,6 +24,13 @@ def print_logo():
     print(logo)
 print_logo()
 
+print("+---+ ")
+print("|   0  ")
+print("|  /|\\ ")
+print("|  / \\ ")
+print("|      ")
+print("========")
+
 print("Hangman Game Rules:")
 print("- The computer generates a random word and you have to guess it letter by letter.")
 print("- If you guess the correct letter, it will be placed on the game board.")
@@ -57,7 +64,7 @@ def print_hangman(wrong):
         print("|      ")
         print("|      ")
         print("========")
-     elif (wrong == 1):
+    elif (wrong == 1):
         print("+---+ ")
         print("|   0  ")
         print("|      ")
@@ -81,27 +88,29 @@ def print_hangman(wrong):
     elif (wrong == 4):
         print("+---+ ")
         print("|   0  ")
-        print("|  /|\ ")
+        print("|  /|\\ ")
         print("|      ")
         print("|      ")
         print("========")
     elif (wrong == 5):
         print("+---+ ")
         print("|   0  ")
-        print("|  /|\ ")
+        print("|  /|\\ ")
         print("|  /   ")
         print("|      ")
         print("========")
-    elif (wrong == 6):
+    elif(wrong == 6):
         print("+---+ ")
         print("|   0  ")
-        print("|  /|\ ")
-        print("|  / \ ")
+        print("|  /|\\ ")
+        print("|  / \\ ")
         print("|      ")
         print("========")
 
+   
 
-def play_game()
+
+# def play_game()
 
        
 
