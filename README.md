@@ -68,15 +68,38 @@ ___
 
 #### Strategy
 
+* The Hangman game needs to be simple but fun and interactive. 
+* The rules must effectively outline to the user how to play the game.
+* The Hangman game needs to be started when the user is ready.
+* The number of remaining guesses must be displayed to the player throughout.
+* The player must be notified when they have guessed an incorrect/correct letter.
+* The player must be notified if they have won/lost the game.
+* The player must be able to play the game again or exit back to the start.
+
 #### Scope
+
+* The objective of the Hangman game is to get players to guess the hidden word by guessing individual letters one at a time.
+* The traditional pen and paper Hangman artwork must be included, and be completed section by section when the player guesses are incorrect.
 
 #### Structure
 
+* As this Hangman game works on the command line interface, information will be displayed to the player depending on their input/ requests.
+* The game rules are displayed and the player is asked if they want to play, and given the Yes/No input options.
+* When the game begins, the player is shown an empty gallows as well as a row of empty letter placeholders, in accordance to the hidden word.
+* When the player guesses a letter, if it is correct the letters are revealed in the placeholders. The amount of remaining guesses in unaffected.
+* When the player guesses an incorrect letter, the player is notified this letter is not in the hidden word, a section is added to the Hangman and the number of remaining guesses is decreased. 
+* When the player runs out of guesses and completes the Hangman, they have lost the game.
+* If the player guesses the full word correctly before running out of guesses, they have won the game.
+
 #### Skeleton
 ##### Flowchart
+I created a concept flowchart for my Hangman game using Lucid Chart.
+
+PLACE FLOWCHART HERE…
 
 #### Surface
-
+* Due to the nature of this project, there was no design required. However, I created the Hangman logo using ASCII banner maker and also included the Hangman Gallows on startup of the program.
+* The game rules are displayed underneath the logo before the user is asked if they would like to play, and prompted to input Yes/No
 
 
 ___
@@ -84,12 +107,27 @@ ___
 ### Page Features
 
 #### Welcome
+PLACE SCREENGRAB HERE…
+
+The player is presented with the Welcome screen and shown the game rules
 
 #### Game
+PLACE SCREENGRAB HERE…
+
+The player is shown the empty Hangman Gallows along with the placeholders of the hidden word. The number of guesses remaining is displayed, and the player is prompted to enter a letter.
 
 #### Game Over
+PLACE WIN SCREENGRAB HERE…
+
+PLACE LOSE SCREENGRAB HERE…
+
+If the player guesses the full word correctly they have won the game, and are congratulated. If the player runs out of guesses and completes the Hangman, they have lost the game.
+The player is asked if they would like to play again.
 
 #### Validating User input
+PLACE SCREENGRAB HERE…
+
+If the player enters an invalid input the game notifies the player and requests they enter the correct input
 
 
 ___
