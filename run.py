@@ -36,19 +36,51 @@ print("- If you complete the word you win the game.")
 print("- If you guess the wrong letter, you'll lose a guess & add a piece to the Hangman.")
 print("- If you use up all your guesses and the Hangman is complete, you lose the game.\n")
 
-"""
-Validates user input. Requires user to enter only Y or N.
-If user inputs invalid choice the loop runs until one of the options is selected.
-"""
-while True:
-    choice = input("Do you want to play? Enter 'Y' for yes or 'N' for no: \n").upper()
-    if choice == "Y" :
-        play_game()
-    elif choice == "N" :
-        print("Sorry to see you go. Come back and play another time!")
-        break
-    else:
-        print("Invalid option.")
+def play_choice():
+    """
+    Validates user input. Requires user to enter only Y or N.
+    If user inputs invalid choice the loop runs until one of the options is selected.
+    """
+    while True:
+        choice = input("Do you want to play? Enter 'Y' for yes or 'N' for no: \n").upper()
+        if choice == "Y" :
+            play_game(word)
+        elif choice == "N" :
+            print("Sorry to see you go. Come back and play another time!")
+            break
+        else:
+            print("Invalid option.")
+play_choice()
+
+word = random.choice(word_bank).upper()
+
+def play_game(word):
+    player_guess = [" _ "] * len(word)
+    guessed_letters = []
+    remaining_guesses = 6
+    wrong_guesses = 0
+    print("Lets Play!")
+    print(print_hangman(wrong))
+    print(player_guess)
+    print("\n")
+    while wrong > 0:
+        guess = input("Guess a letter: \n").upper()
+        if len(guess) == 1:
+            if guess in guessed_letters:
+                print(f"You already guessed {guess}. Try again.")
+            elif guess not in word:
+                print(f"{guess} is not in this word. Try again.")
+                remaining_guesses -= 1
+                guessed_letters.append(guess)
+            else:
+                print(f"{guess} is in this word!")
+                guessed_letters.append(guess)
+        else:
+            print("That's not a letter. Try again.")
+            print(print_hangman(wrong))
+            print(guessed)
+            print("\n")
+
 
 
 def print_hangman(wrong):
@@ -108,7 +140,7 @@ def print_hangman(wrong):
    
 
 
-# def play_game()
+# play_game()
 
        
 
