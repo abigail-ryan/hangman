@@ -52,34 +52,12 @@ def play_choice():
             print("Invalid option.")
 play_choice()
 
-word = random.choice(word_bank).upper()
+def get_random_word():
+    word = random.choice(word_bank)
+    return word.upper()
 
 def play_game(word):
-    player_guess = [" _ "] * len(word)
-    guessed_letters = []
-    remaining_guesses = 6
-    wrong_guesses = 0
-    print("Lets Play!")
-    print(print_hangman(wrong))
-    print(player_guess)
-    print("\n")
-    while wrong > 0:
-        guess = input("Guess a letter: \n").upper()
-        if len(guess) == 1:
-            if guess in guessed_letters:
-                print(f"You already guessed {guess}. Try again.")
-            elif guess not in word:
-                print(f"{guess} is not in this word. Try again.")
-                remaining_guesses -= 1
-                guessed_letters.append(guess)
-            else:
-                print(f"{guess} is in this word!")
-                guessed_letters.append(guess)
-        else:
-            print("That's not a letter. Try again.")
-            print(print_hangman(wrong))
-            print(guessed)
-            print("\n")
+    
 
 
 
@@ -140,8 +118,8 @@ def print_hangman(wrong):
    
 
 def main():
-    play_choice()
     play_game(word)
+    play_choice()
 
        
 
