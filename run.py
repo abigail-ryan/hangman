@@ -15,7 +15,7 @@ def get_random_word():
     word = random.choice(word_bank)
     return word.upper()
 
-def print_hangman(wrong):
+def print_hangman(remaining_guesses):
     """
     Prints hangman sections depending on number of wrong letters guessed.
     """
@@ -72,7 +72,7 @@ def print_hangman(wrong):
 def play_game(word):
     completed_word = ["_"] * len(word)
     guessed = False
-    letters_guessed = [] #Fix this to guessed_letters
+    guessed_letters = [] 
     remaining_guesses = 6
     print("Lets Play!")
     print_hangman(remaining_guesses)
