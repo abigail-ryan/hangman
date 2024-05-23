@@ -147,6 +147,7 @@ print("- If you guess the correct letter, it will be placed on the game board.")
 print("- If you complete the word you win the game.")
 print("- If you guess the wrong letter, you'll lose a guess & add a piece to the Hangman.")
 print("- If you use up all your guesses and the Hangman is complete, you lose the game.\n")
+print("Do you want to play?")
 
 def play_choice():
     """
@@ -154,7 +155,8 @@ def play_choice():
     If user inputs invalid choice the loop runs until one of the options is selected.
     """
     while True:
-        choice = input("Do you want to play? Enter 'Y' for yes or 'N' for no: \n").upper()
+        # print("Do you want to play?")
+        choice = input("Enter 'Y' for yes or 'N' for no: \n").upper()
         if choice == "Y" :
             clear_screen()
             word = get_random_word()
