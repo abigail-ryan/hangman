@@ -19,49 +19,49 @@ def print_hangman(wrong):
     """
     Prints hangman sections depending on number of wrong letters guessed.
     """
-    if (wrong == 0):
+    if (remaining_guesses == 6):
         print("+---+ ")
         print("|      ")
         print("|      ")
         print("|      ")
         print("|      ")
         print("========")
-    elif (wrong == 1):
+    elif (remaining_guesses == 5):
         print("+---+ ")
         print("|   0  ")
         print("|      ")
         print("|      ")
         print("|      ")
         print("========")
-    elif (wrong == 2):
+    elif (remaining_guesses == 4):
         print("+---+ ")
         print("|   0  ")
         print("|   |  ")
         print("|      ")
         print("|      ")
         print("========")
-    elif (wrong == 3):
+    elif (remaining_guesses == 3):
         print("+---+ ")
         print("|   0  ")
         print("|  /|  ")
         print("|      ")
         print("|      ")
         print("========")
-    elif (wrong == 4):
+    elif (remaining_guesses == 2):
         print("+---+ ")
         print("|   0  ")
         print("|  /|\\ ")
         print("|      ")
         print("|      ")
         print("========")
-    elif (wrong == 5):
+    elif (remaining_guesses == 1):
         print("+---+ ")
         print("|   0  ")
         print("|  /|\\ ")
         print("|  /   ")
         print("|      ")
         print("========")
-    elif(wrong == 6):
+    elif (remaining_guesses == 0):
         print("+---+ ")
         print("|   0  ")
         print("|  /|\\ ")
@@ -72,7 +72,7 @@ def print_hangman(wrong):
 def play_game(word):
     completed_word = ["_"] * len(word)
     guessed = False
-    letters_guessed = []
+    letters_guessed = [] #Fix this to guessed_letters
     remaining_guesses = 6
     print("Lets Play!")
     print_hangman(remaining_guesses)
