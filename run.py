@@ -1,3 +1,4 @@
+import os
 import random
 
 word_bank = ["elephant", "computer", "sunshine", "butterfly", "adventure", "chocolate", 
@@ -14,6 +15,13 @@ def get_random_word():
     """
     word = random.choice(word_bank)
     return word.upper()
+
+def clear_screen():
+    """
+    Clears the welcome screen and only shows the game play to the user.
+    """
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 
 def print_hangman(remaining_guesses):
     """
@@ -148,6 +156,7 @@ def play_choice():
     while True:
         choice = input("Do you want to play? Enter 'Y' for yes or 'N' for no: \n").upper()
         if choice == "Y" :
+            clear_screen()
             word = get_random_word()
             play_game(word)
         elif choice == "N" :
