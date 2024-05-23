@@ -8,8 +8,6 @@ word_bank = ["elephant", "computer", "sunshine", "butterfly", "adventure", "choc
  "enchanted", "radiance", "velvet", "bird", "fish", "moon", "star", "tree", "rain", "book", "time"]
 
 
-print("Welcome to ")
-
 def print_logo():
     """
     Prints the hangman logo when the program is run
@@ -24,12 +22,12 @@ def print_logo():
     print(logo)
 print_logo()
 
-print("+---+ ")
-print("|   0  ")
-print("|  /|\\ ")
-print("|  / \\ ")
-print("|      ")
-print("========")
+print("    +---+ ")
+print("    |   0  ")
+print("    |  /|\\ ")
+print("    |  / \\ ")
+print("    |      ")
+print("    ========")
 
 print("Hangman Game Rules:")
 print("- The computer generates a random word and you have to guess it letter by letter.")
