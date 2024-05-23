@@ -139,8 +139,9 @@ def print_hangman(wrong):
 
    
 
-
-# play_game()
+def main():
+    play_choice()
+    play_game(word)
 
        
 
