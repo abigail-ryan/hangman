@@ -2,10 +2,10 @@ import random
 
 word_bank = ["elephant", "computer", "sunshine", "butterfly", "adventure", "chocolate", 
 "rainbow", "guitar", "ocean", "watermelon", "universe", "mountain", "fireworks", "friendship",
- "beach", "pizza", "dragon", "galaxy", "starfish", "vacation", "jelly", "jungle", "mystery", 
- "serenity", "waterfall", "wonderland", "carnival", "treasure", "dreamcatcher", "lighthouse", 
- "mermaid", "whisper", "adventure", "harmony", "midnight", "symphony", "twilight", "whisper", "blossom",
- "enchanted", "radiance", "velvet", "bird", "fish", "moon", "star", "tree", "rain", "book", "time"]
+"beach", "pizza", "dragon", "galaxy", "starfish", "vacation", "jelly", "jungle", "mystery", 
+"serenity", "waterfall", "wonderland", "carnival", "treasure", "dreamcatcher", "lighthouse", 
+"mermaid", "whisper", "adventure", "harmony", "midnight", "symphony", "twilight", "whisper", "blossom",
+"enchanted", "radiance", "velvet", "bird", "fish", "moon", "star", "tree", "rain", "book", "time"]
 
 
 def get_random_word():
@@ -99,10 +99,11 @@ def play_game(word):
                 word_as_list = list(completed_word)
                 indices = [i for i, letter in enumerate(word) if letter == player_guess]
                 for index in indices:
-                    word_as_list[index] = guess
+                    word_as_list[index] = guess # change this to player_guess
                 word_completion = "".join(word_as_list)
                 if "_" not in word_completion:
                     guessed = True
+                    #add in placing correct word into placeholders
         else:
             print("Not a valid guess. Try again.")
             print_hangman(remaining_guesses)
