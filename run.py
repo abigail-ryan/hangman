@@ -5,7 +5,7 @@ word_bank = ["elephant", "computer", "sunshine", "butterfly", "adventure", "choc
 "rainbow", "guitar", "ocean", "watermelon", "universe", "mountain", "fireworks", "friendship",
 "beach", "pizza", "dragon", "galaxy", "starfish", "vacation", "jelly", "jungle", "mystery", 
 "serenity", "waterfall", "wonderland", "carnival", "treasure", "dreamcatcher", "lighthouse", 
-"mermaid", "whisper", "adventure", "harmony", "midnight", "symphony", "twilight", "whisper", "blossom",
+"mermaid", "adventure", "harmony", "midnight", "symphony", "twilight", "whisper", "blossom",
 "enchanted", "radiance", "velvet", "bird", "fish", "moon", "star", "tree", "rain", "book", "time"]
 
 
@@ -78,7 +78,7 @@ def print_hangman(remaining_guesses):
         print("========")
 
 def play_game(word):
-    completed_word = ["_"] * len(word)
+    completed_word = "_" * len(word)
     guessed = False
     guessed_letters = [] 
     remaining_guesses = 6
@@ -93,12 +93,16 @@ def play_game(word):
         player_guess = input("Guess a letter: \n").upper()
         """
         Check if players guess is a letter, has already been guessed, and if guess is/is not in the hidden word.
+        Displays a list of letters the player has already guessed.
+        Displays the amount of guesses remaining for the player.
         """
         if len(player_guess) == 1 and player_guess.isalpha():
             if player_guess in guessed_letters:
                 print(f"You already guessed {player_guess}. Try again.")
             elif player_guess not in word:
+                print(print_hangman(remaining_guesses))
                 print(f"{player_guess} is not in this word. Try again.")
+                print(f"Letters you've already guessed: {','.join(guessed_letters)}\n")
                 remaining_guesses -= 1
                 guessed_letters.append(player_guess)
             else:
@@ -107,7 +111,7 @@ def play_game(word):
                 word_as_list = list(completed_word)
                 indices = [i for i, letter in enumerate(word) if letter == player_guess]
                 for index in indices:
-                    word_as_list[index] = guess # change this to player_guess
+                    word_as_list[index] = player_guess # change this to player_guess
                 word_completion = "".join(word_as_list)
                 if "_" not in word_completion:
                     guessed = True
@@ -117,7 +121,12 @@ def play_game(word):
             print_hangman(remaining_guesses)
             print(completed_word) 
             print("\n")
- 
+    
+    if not guessed:
+        print_hangman(remaining_guesses)
+        print(f"Sorry! You lost the game. The hidden word was {word}")
+    else:
+        print(f"Congratulations, you guessed the word: {word}. You win!")
 
 
 def print_logo():
