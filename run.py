@@ -100,22 +100,29 @@ def play_game(word):
             if player_guess in guessed_letters:
                 print(f"You already guessed {player_guess}. Try again.")
             elif player_guess not in word:
-                print(print_hangman(remaining_guesses))
+                print_hangman(remaining_guesses)
+                print(completed_word)
+                print("\n")
                 print(f"{player_guess} is not in this word. Try again.")
-                print(f"Letters you've already guessed: {','.join(guessed_letters)}\n")
                 remaining_guesses -= 1
                 guessed_letters.append(player_guess)
+                print(f"Letters you've already guessed: {','.join(guessed_letters)}\n")
             else:
                 print(f"{player_guess} is in this word!")
                 guessed_letters.append(player_guess)
                 word_as_list = list(completed_word)
                 indices = [i for i, letter in enumerate(word) if letter == player_guess]
                 for index in indices:
-                    word_as_list[index] = player_guess # change this to player_guess
-                word_completion = "".join(word_as_list)
-                if "_" not in word_completion:
-                    guessed = True
-                    #add in placing correct word into placeholders
+                    word_as_list[index] = player_guess
+                completed_word = "".join(word_as_list)
+                print_hangman(remaining_guesses)
+                print(completed_word)
+                print("\n")
+                print(f"Letters you've already guessed: {', '.join(guessed_letters)}\n")
+
+                if "_" not in completed_word:
+                    guessed = True    
+
         else:
             print("Not a valid guess. Try again.")
             print_hangman(remaining_guesses)
