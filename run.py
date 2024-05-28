@@ -108,8 +108,11 @@ def play_game(word):
                 guessed_letters.append(player_guess)
                 print(f"Letters you've already guessed: {','.join(guessed_letters)}\n")
             else:
-                print(f"{player_guess} is in this word!")
                 guessed_letters.append(player_guess)
+                """
+                Checks if the correctly guessed letter is anywhere within the hidden word and places all 
+                instances of correct letter in the placeholders"
+                """
                 word_as_list = list(completed_word)
                 indices = [i for i, letter in enumerate(word) if letter == player_guess]
                 for index in indices:
@@ -118,15 +121,15 @@ def play_game(word):
                 print_hangman(remaining_guesses)
                 print(completed_word)
                 print("\n")
+                print(f"{player_guess} is in this word!")
                 print(f"Letters you've already guessed: {', '.join(guessed_letters)}\n")
 
                 if "_" not in completed_word:
                     guessed = True    
 
         else:
-            print("Not a valid guess. Try again.")
-            print_hangman(remaining_guesses)
             print(completed_word) 
+            print("Not a valid guess. Try again.")
             print("\n")
     
     if not guessed:
