@@ -91,6 +91,7 @@ def play_again():
         elif play_again == "N":
             print("Thank you for playing. Goodbye!")
             return False
+            break
         else:
             print("Invalid input. Please enter 'Y' or 'N'.")
 
@@ -153,7 +154,6 @@ def play_game(word):
         print(f"Sorry! You lost the game. The hidden word was {word}")
     else:
         print(f"Congratulations, you guessed the word: {word}. You win!")
-        play_again()
 
 
 def print_logo():
