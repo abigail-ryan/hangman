@@ -55,12 +55,12 @@ ___
 
 ### User Stories
 
-* A user can easily identify what that this is a Hangman game.
+* A user can easily identify that this is a Hangman game.
 * A user can understand the game rules.
 * A user can choose to start the game when they are ready.
 * A user is provided with clear instructions throughout the game.
 * A user can immediately see if their guess is correct/incorrect.
-* A user can exit the game at any point.
+* A user can choose to stop playing the game after each round.
 * A user can start the game over again.
 
 
@@ -76,7 +76,7 @@ ___
 * The number of remaining guesses must be displayed to the player throughout.
 * The player must be notified when they have guessed an incorrect/correct letter.
 * The player must be notified if they have won/lost the game.
-* The player must be able to play the game again or exit back to the start.
+* The player must be able to play the game again or end the program.
 
 #### Scope
 
@@ -85,7 +85,7 @@ ___
 
 #### Structure
 
-* As this Hangman game works on the command line interface, information will be displayed to the player depending on their input/ requests.
+* As this Hangman game works on the command line interface, information will be displayed to the player depending on their input/requests.
 * The game rules are displayed and the player is asked if they want to play, and given the Yes/No input options.
 * When the game begins, the player is shown an empty gallows as well as a row of empty letter placeholders, in accordance to the hidden word.
 * When the player guesses a letter, if it is correct the letters are revealed in the placeholders. The amount of remaining guesses in unaffected.
@@ -122,11 +122,11 @@ The player is presented with the Welcome screen and shown the game rules. The pl
 
 ![Screenshot of Hangman App](documentation/hangman_app_terminal_screenshot.png)
 
-If the user inputs N the program ends with a feedback message.
+If the user inputs "N" the program ends with a feedback message.
 
 ![Screenshot of start feedback message](documentation/hangman_start_player_input_no.png)
 
-If the user inputs Y it starts the game.
+If the user inputs "Y" it starts the game.
 
 #### Game
 
@@ -164,11 +164,11 @@ Win - If the player guesses the full word correctly they have won the game, and 
 
 ![Screenshot of player wins](documentation/hangman_you_win.png)
 
-Lose - If the player runs out of guesses and completes the Hangman, they have lost the game and show what the hidden word was.
+Lose - If the player runs out of guesses and completes the Hangman, they have lost the game and shown what the hidden word was.
 
 ![Screenshot of player loses](documentation/hangman_you_lose.png)
 
-The player is asked if they would like to play again; if so the program runs again and new random word is generated. If the player chooses not to play again they receive a goodbye message.
+The player is asked if they would like to play again; if so the program runs again and new random word is generated. If the player chooses not to play again they receive a goodbye message and the program ends.
 
 ![Screenshot of goodbye message](documentation/hangman_game_over_goodbye.png)
 
@@ -180,7 +180,7 @@ If the player enters an invalid input the game notifies the player and requests 
 <summary>Validating user input</summary>
 <br>
 
-Player recieves notice if they have tried to input anything other than Y or N on program startup.
+Player recieves notice if they have tried to input anything other than "Y" or "N" on program startup.
 
 ![Screenshot of validating player input start game](documentation/hangman_start_validation.png)
 
@@ -211,11 +211,12 @@ ___
 
 #### Frameworks, Libraries, Technologies and Programs used
 
-* Lucid Chart - used to create the concept flowchart for this project
-* Git - used for version control
-* GitHub - used to save and store all files for this project
+* Code Institute - for the code template for this project.
+* Lucid Chart - used to create the concept flowchart for this project.
+* Git - used for version control.
+* GitHub - used to save and store all files for this project.
 * Heroku - used for deploying this project.
-* PEP8 Validator - used for validating the Python code
+* PEP8 Validator - used for validating the Python code.
 
 ___
 
@@ -227,17 +228,17 @@ ___
 | ---| ---| ---|
 | Play choice | The program ask the user if they would like to play and instructs them to input “Y” for yes, “N” for no. The program will only accept these two input options | Yes |
 | Player inputs letter/symbol not expected | Player receives error message, “Oops that’s not an option” prompted again to enter “Y” or “N” | Yes |
-| Player Input “N” | Program does not run, player receives message “Sorry to see you go. Come back and play another time!”. | Yes |
-| Play Input “Y” | Terminal clears and Game starts with empty Hangman Gallows, hidden word placeholders and prompt to guess a letter. | Yes |
-| Player enters correct  letter | Player receives message “Yay! There is 1 or more 'letter' in this word!” Letter replaces underscore in the correct place within the word, and letter is added to list of guesses so far. Prompt to guess a letter. | Yes |
-| Player enters incorrect  letter | Player receives message “'letter' is not in this word. Try again.”. A piece of the hangman is added to the gallows, and the letter is added to list of guesses so far. Prompt to guess a letter. | Yes |
-| Player inputs number/symbol not expected | Player recieves message “Oops that's not a valid guess. Please only enter letters.” Prompt to guess a letter. | Yes |
-| Player enters letter that has already been guessed | Player receives message "You already guessed ‘letter’. Try again.” Prompt to guess a letter. | Yes |
-| Players guesses all correct letters | All underscores replaced by correct letters, player receives message “Congratulations, you guessed the word: ‘WORD'. You win! Do you want to play again? (Y/N):” | Yes |
+| Player Input “N” | Program does not run, player receives message “Sorry to see you go. Come back and play another time!” | Yes |
+| Player Input “Y” | Terminal clears and game starts with empty Hangman Gallows, hidden word placeholders and prompt to guess a letter | Yes |
+| Player enters correct letter | Player receives message “Yay! There is 1 or more 'letter' in this word!” Letter replaces underscore in the correct place within the word, and letter is added to list of guesses so far. Prompt to guess a letter | Yes |
+| Player enters incorrect  letter | Player receives message “'letter' is not in this word. Try again.”. A piece of the hangman is added to the gallows, and the letter is added to list of guesses so far. Prompt to guess a letter | Yes |
+| Player inputs number/symbol not expected | Player recieves message “Oops that's not a valid guess. Please only enter letters.” Prompt to guess a letter | Yes |
+| Player enters letter that has already been guessed | Player receives message "You already guessed ‘letter’. Try again.” Prompt to guess a letter | Yes |
+| Player guesses all correct letters | All underscores replaced by correct letters, player receives message “Congratulations, you guessed the word: ‘WORD'. You win! Do you want to play again? (Y/N):” | Yes |
 | After 6 incorrect guesses | The Hangman is complete, player receives message “Sorry! You lost the game. The hidden word was ‘WORD’. Do you want to play again? (Y/N):” | Yes |
 | Play again choice: "Y" | Clears terminal and starts new game | Yes |
-| Play again choice: "N" | Player receives message “Thank you for playing. Goodbye!”. Program ends. | Yes |
-|  |  |  |
+| Play again choice: "N" | Player receives message “Thank you for playing. Goodbye!”. Program ends | Yes |
+
 
 #### Pep8 Code Validation
 
@@ -314,7 +315,7 @@ ___
 * [Kite](https://www.youtube.com/watch?v=m4nEnsavl6w) for the Hangman basic game functionality code which I studied and altered for my project.
 * [ASCII](https://manytools.org/hacker-tools/ascii-banner/) for the Hangman logo banner.
 * [Alice Hiller](https://github.com/alicehillier/rainforest-cafe/#deployment) for the forking and cloning a GitHub repository structure.
-* [Chris Horton](https://gist.github.com/chrishorton/8510732aa9a80a03c829b09f12e20d9c) for the hangman artwork
+* [Chris Horton](https://gist.github.com/chrishorton/8510732aa9a80a03c829b09f12e20d9c) for the hangman artwork.
 * [Kera Cudmore - Creating your First README](https://github.com/kera-cudmore/readme-examples) for README content structure and Markdown language guidance.
 
 
