@@ -193,6 +193,10 @@ ___
 
 ### Future Features
 
+For future development of this project I would like to add:
+* A high scores/leader board feature, that shows the player a list of previous players high scores to encourage more game play.
+* A category option where players get to choose a category they would like to play in, example: Countries, Plants, Movies, Singers etc.
+* A hint to help the players correctly guess the word before completing the Hangman. The hint would be for the category only.
 
 ___
 
@@ -200,8 +204,15 @@ ___
 
 #### Languages
 
+* Python
+
 #### Frameworks, Libraries, Technologies and Programs used
 
+* Lucid Chart - used to create the concept flowchart for this project
+* Git - used for version control
+* GitHub - used to save and store all files for this project
+* Heroku - used for deploying this project.
+* PEP8 Validator - used for validating the Python code
 
 ___
 
