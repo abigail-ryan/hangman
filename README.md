@@ -27,6 +27,8 @@ The popular pen and paper word guessing game, Hangman, can now be played in digi
   * [Languages](#languages)
   * [Frameworks, Libraries, Technologies and Programs used](#frameworks-libraries-technologies-and-programs-used)
 * [Testing](#testing)
+  * [Manual Testing](#manual-testing)
+  * [Pep8 Code Validation](#pep8-code-validation)
 * [Deployment](#deployment)
   * [Deploying to Heroku](#Deploying-to-heroku)
   * [Forking the GitHub Repository](#forking-the-github-repository)
@@ -217,6 +219,30 @@ ___
 ___
 
 ### Testing
+
+#### Manual Testing
+
+#### Pep8 Code Validation
+
+<details>
+<summary>Pep8 Errors</summary>
+<br>
+
+Upon first passing my code through the validator, there were many errors stating lines of code were too long, trailing white space etc.
+
+![Screenshot of pep8 code validation - errors](documentation/pep8_testing_errors.png)
+
+</details>
+
+<details>
+<summary>Pep8 No Errors</summary>
+<br>
+
+I fixed these errors within the validation window and copied the error free code back into my project. I re-checked the code again to ensure it was passing without errors.
+
+![Screenshot of pep8 code validation - no errors](documentation/pep8_testing_no_errors.png)
+
+</details>
 
 
 ___
