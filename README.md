@@ -233,10 +233,8 @@ ___
 | Player enters incorrect  letter | Player receives message “'letter' is not in this word. Try again.”. A piece of the hangman is added to the gallows, and the letter is added to list of guesses so far. Prompt to guess a letter. | Yes |
 | Player inputs number/symbol not expected | Player recieves message “Oops that's not a valid guess. Please only enter letters.” Prompt to guess a letter. | Yes |
 | Player enters letter that has already been guessed | Player receives message "You already guessed ‘letter’. Try again.” Prompt to guess a letter. | Yes |
-| Players guesses all correct letters | All underscores replaced by correct letters, player receives message “Congratulations, you guessed the word: ‘WORD'. You win! 
-Do you want to play again? (Y/N):” | Yes |
-| After 6 incorrect guesses | The Hangman is complete, player receives message “Sorry! You lost the game. The hidden word was ‘WORD’
-Do you want to play again? (Y/N):” | Yes |
+| Players guesses all correct letters | All underscores replaced by correct letters, player receives message “Congratulations, you guessed the word: ‘WORD'. You win! Do you want to play again? (Y/N):” | Yes |
+| After 6 incorrect guesses | The Hangman is complete, player receives message “Sorry! You lost the game. The hidden word was ‘WORD’. Do you want to play again? (Y/N):” | Yes |
 | Play again choice: "Y" | Clears terminal and starts new game | Yes |
 | Play again choice: "N" | Player receives message “Thank you for playing. Goodbye!”. Program ends. | Yes |
 |  |  |  |
