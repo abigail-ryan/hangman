@@ -94,7 +94,7 @@ def play_again():
             return False
             break
         else:
-            print("Invalid input. Please enter 'Y' or 'N'.")
+            print("Oops, That's not an option. Please enter 'Y' or 'N'.")
 
 
 # Hangman basic game functionality code altered for my project, credited to: https://www.youtube.com/watch?v=m4nEnsavl6w
@@ -103,7 +103,7 @@ def play_game(word):
     guessed = False
     guessed_letters = [] 
     remaining_guesses = 6
-    print("Lets Play!")
+    print("Let's Play!")
     print_hangman(remaining_guesses)
     print(completed_word) 
     print("\n")
@@ -145,7 +145,7 @@ def play_game(word):
                 print_hangman(remaining_guesses)
                 print(completed_word)
                 print("\n")
-                print(f"Yay! There is 1 or more {player_guess} is in this word!")
+                print(f"Yay! There is 1 or more {player_guess} in this word!")
                 print(f"Letters you've already guessed: {', '.join(guessed_letters)}\n")
 
                 if "_" not in completed_word:
@@ -208,7 +208,7 @@ def play_choice():
             print("Sorry to see you go. Come back and play another time!")
             break
         else:
-            print("Invalid option.")
+            print("Oops, that's not an option.")
 
 
 def main():
