@@ -148,7 +148,7 @@ def play_game(word):
                 print(f"{player_guess} is not in this word. Try again.")
                 remaining_guesses -= 1
                 guessed_letters.append(player_guess)
-                print(f"You've already guessed:{','.join(guessed_letters)}\n")
+                print(f"Letters guessed so far: {','.join(guessed_letters)}\n")
             else:
                 guessed_letters.append(player_guess)
                 """
@@ -165,7 +165,7 @@ def play_game(word):
                 print(completed_word)
                 print("\n")
                 print(f"Yay! There is 1 or more {player_guess} in this word!")
-                print(f"You've already guessed:{', '.join(guessed_letters)}\n")
+                print(f"Letters guessed so far: {', '.join(guessed_letters)}\n")
 
                 if "_" not in completed_word:
                     guessed = True
