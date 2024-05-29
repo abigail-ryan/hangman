@@ -99,6 +99,9 @@ I created a concept flowchart for my Hangman game using Lucid Chart.
 
 ![Screenshot of Hangman concept lucidchart](documentation/lucidchart_hangman.png)
 
+From concept to final product:
+* I chose to remove displaying the amount of remaining guesses to the player, as I decided to include displaying a list of letters that the player has already guessed instead. I felt that having both displayed constantly made the game area too "busy", and as The Hangman is there to represent the amout of incorrect guesses I decided this would be an appropriate change to my initial idea.
+
 #### Surface
 * Due to the nature of this project, there was no design required. However, I created the Hangman logo using ASCII banner maker and also included the Hangman Gallows on startup of the program.
 * The game rules are displayed underneath the logo before the user is asked if they would like to play, and prompted to input Yes/No.
