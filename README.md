@@ -200,6 +200,7 @@ For future development of this project I would like to add:
 * A category option where players get to choose a category they would like to play in, example: Countries, Plants, Movies, Singers etc.
 * A hint to help the players correctly guess the word before completing the Hangman. The hint would be for the category only.
 
+
 ___
 
 ### Technologies Used
@@ -221,6 +222,24 @@ ___
 ### Testing
 
 #### Manual Testing
+
+| Feature Tested | Expected Outcome | As Expected |
+| ---| ---| ---|
+| Play choice | The program ask the user if they would like to play and instructs them to input “Y” for yes, “N” for no. The program will only accept these two input options | Yes |
+| Player inputs letter/symbol not expected | Player receives error message, “Oops that’s not an option” prompted again to enter “Y” or “N” | Yes |
+| Player Input “N” | Program does not run, player receives message “Sorry to see you go. Come back and play another time!”. | Yes |
+| Play Input “Y” | Terminal clears and Game starts with empty Hangman Gallows, hidden word placeholders and prompt to guess a letter. | Yes |
+| Player enters correct  letter | Player receives message “Yay! There is 1 or more 'letter' in this word!” Letter replaces underscore in the correct place within the word, and letter is added to list of guesses so far. Prompt to guess a letter. | Yes |
+| Player enters incorrect  letter | Player receives message “'letter' is not in this word. Try again.”. A piece of the hangman is added to the gallows, and the letter is added to list of guesses so far. Prompt to guess a letter. | Yes |
+| Player inputs number/symbol not expected | Player recieves message “Oops that's not a valid guess. Please only enter letters.” Prompt to guess a letter. | Yes |
+| Player enters letter that has already been guessed | Player receives message "You already guessed ‘letter’. Try again.” Prompt to guess a letter. | Yes |
+| Players guesses all correct letters | All underscores replaced by correct letters, player receives message “Congratulations, you guessed the word: ‘WORD'. You win! 
+Do you want to play again? (Y/N):” | Yes |
+| After 6 incorrect guesses | The Hangman is complete, player receives message “Sorry! You lost the game. The hidden word was ‘WORD’
+Do you want to play again? (Y/N):” | Yes |
+| Play again choice: "Y" | Clears terminal and starts new game | Yes |
+| Play again choice: "N" | Player receives message “Thank you for playing. Goodbye!”. Program ends. | Yes |
+|  |  |  |
 
 #### Pep8 Code Validation
 
