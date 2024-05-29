@@ -1,9 +1,9 @@
 # HANGMAN
-[View my live app here](https://)
+[View my live app here](https://abi-ryan-pp3-hangman-9dd3119b68fb.herokuapp.com/)
 
 The popular pen and paper word guessing game, Hangman, can now be played in digital format using my Python project. Users play a random word every time, and have limited guesses to get it right.
 
-PLACE SCREENGRAB HERE…
+![Screenshot of Hangman app terminal](documentation/hangman_app_terminal_screenshot.png)
 
 ## Contents
 * [Project Goals](#project-goals)
