@@ -95,11 +95,19 @@ ___
 ##### Flowchart
 I created a concept flowchart for my Hangman game using Lucid Chart.
 
-PLACE FLOWCHART HERE…
+![Screenshot of Hangman concept lucidchart](documentation/lucidchart_hangman.png)
 
 #### Surface
 * Due to the nature of this project, there was no design required. However, I created the Hangman logo using ASCII banner maker and also included the Hangman Gallows on startup of the program.
 * The game rules are displayed underneath the logo before the user is asked if they would like to play, and prompted to input Yes/No
+
+<details>
+<summary>Hangman Logo Banner</summary>
+<br>
+
+![Screenshot of Hangman Logo Banner](documentation/ascii_hangman_banner.png)
+
+</details>
 
 
 ___
