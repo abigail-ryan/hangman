@@ -16,13 +16,14 @@ def get_random_word():
     word = random.choice(word_bank)
     return word.upper()
 
+# Clearing terminal code credited to: https://github.com/OleksiiKova/hangman
 def clear_screen():
     """
     Clears the welcome screen and only shows the game play to the user.
     """
     os.system('cls' if os.name == 'nt' else 'clear')
 
-
+# Hangman artwork, altered for my project, credited to: https://gist.github.com/chrishorton/8510732aa9a80a03c829b09f12e20d9c
 def print_hangman(remaining_guesses):
     """
     Prints hangman sections depending on number of wrong letters guessed.
@@ -95,6 +96,8 @@ def play_again():
         else:
             print("Invalid input. Please enter 'Y' or 'N'.")
 
+
+# Hangman basic game functionality code altered for my project, credited to: https://www.youtube.com/watch?v=m4nEnsavl6w
 def play_game(word):
     completed_word = "_" * len(word)
     guessed = False
@@ -105,14 +108,17 @@ def play_game(word):
     print(completed_word) 
     print("\n")
     """
-    While the remining guesses are not less than 6, game runs through loop asking player to guess a letter.
+    While the remining guesses are greater than 0, the game runs through 
+    the loop asking player to guess a letter.
     """
     while not guessed and remaining_guesses > 0:
         player_guess = input("Guess a letter: \n").upper()
         """
-        Check if players guess is a letter, has already been guessed, and if guess is/is not in the hidden word.
+        Checks if players guess is a letter, has already been guessed, and 
+        if the guess is/is not in the hidden word.
         Displays a list of letters the player has already guessed.
-        Displays the amount of guesses remaining for the player.
+        Displays the hangman with added sections if guessed letters are 
+        not in the word.
         """
         if len(player_guess) == 1 and player_guess.isalpha():
             if player_guess in guessed_letters:
@@ -128,8 +134,8 @@ def play_game(word):
             else:
                 guessed_letters.append(player_guess)
                 """
-                Checks if the correctly guessed letter is anywhere within the hidden word and places all 
-                instances of correct letter in the placeholders"
+                Checks if the correctly guessed letter is anywhere within the hidden word 
+                and places all instances of correct letter in the placeholders.
                 """
                 word_as_list = list(completed_word)
                 indices = [i for i, letter in enumerate(word) if letter == player_guess]
@@ -155,7 +161,7 @@ def play_game(word):
     else:
         print(f"Congratulations, you guessed the word: {word}. You win!")
 
-
+# Hangman logo banner sourced from: https://manytools.org/hacker-tools/ascii-banner/
 def print_logo():
     """
     Prints the hangman logo when the program is run
