@@ -115,9 +115,10 @@ ___
 ### Project Features
 
 #### Welcome
-![Screenshot of Hangman App](documentation/hangman_app_terminal_screenshot.png)
 
 The player is presented with the Welcome screen and shown the game rules. The player is asked if they would like to play. 
+
+![Screenshot of Hangman App](documentation/hangman_app_terminal_screenshot.png)
 
 If the user inputs N the program ends with a feedback message.
 
@@ -126,9 +127,10 @@ If the user inputs N the program ends with a feedback message.
 If the user inputs Y it starts the game.
 
 #### Game
-![Screenshot of Hangman game start](documentation/hangman_game_board_empty.png)
 
 The player is shown the empty Hangman Gallows along with the placeholders of the hidden word. The player is prompted to enter a letter.
+
+![Screenshot of Hangman game start](documentation/hangman_game_board_empty.png)
 
 Once a letter is guessed the player receives feedback if their guess is in the word, and also a list of the letters they have already guessed so far.
 
@@ -138,9 +140,9 @@ Once a letter is guessed the player receives feedback if their guess is in the w
 <summary>When the guessed letter is not in the word</summary>
 <br>
 
-![Screenshot of incorrect letter guess]()
-
 The player is notified that their guess is not in the word. This letter is then added to the list of letters already guessed.
+
+![Screenshot of incorrect letter guess](documentation/hangman_incorrect_letter.png)
 
 </details>
 
@@ -148,24 +150,43 @@ The player is notified that their guess is not in the word. This letter is then 
 <summary>When the player guesses the same letter again</summary>
 <br>
 
-![Screenshot of already guessed letter]()
+The player is notified that they have already guessed this letter and prompted to try again.
 
-The player is notified that their guess is not in the word. This letter is then added to the list of letters already guessed.
+![Screenshot of already guessed letter](documentation/hangman_already_guessed_letter.png)
 
 </details>
 
 #### Game Over
-![Screenshot of ]()
 
-![Screenshot of ]()
+Win - If the player guesses the full word correctly they have won the game, and are congratulated.
 
-If the player guesses the full word correctly they have won the game, and are congratulated. If the player runs out of guesses and completes the Hangman, they have lost the game.
-The player is asked if they would like to play again.
+![Screenshot of player wins](documentation/hangman_you_win.png)
+
+Lose - If the player runs out of guesses and completes the Hangman, they have lost the game and show what the hidden word was.
+
+![Screenshot of player loses](documentation/hangman_you_lose.png)
+
+The player is asked if they would like to play again; if so the program runs again and new random word is generated. If the player chooses not to play again they receive a goodbye message.
+
+![Screenshot of goodbye message](documentation/hangman_game_over_goodbye.png)
 
 #### Validating User input
-![Screenshot of ]()
 
-If the player enters an invalid input the game notifies the player and requests they enter the correct input
+If the player enters an invalid input the game notifies the player and requests they enter the correct input.
+
+<details>
+<summary>Validating user input</summary>
+<br>
+
+Player recieves notice if they have tried to input anything other than Y or N on program startup.
+
+![Screenshot of validating player input start game](documentation/hangman_start_validation.png)
+
+The player recieves notice if they have tried to input anything other than a letter of the alphabet during game play.
+
+![Screenshot of validating player input start game](documentation/hangman_letter_guess_validation.png)
+
+</details>
 
 
 ___
