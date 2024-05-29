@@ -17,7 +17,7 @@ The popular pen and paper word guessing game, Hangman, can now be played in digi
   * [Skeleton](#skeleton)
     * [Flowchart](#flowchart)
   * [Surface](#surface)
-* [Page Features](#page-features)
+* [Project Features](#project-features)
   * [Welcome](#welcome)
   * [Game](#game)
   * [Game Over](#game-over)
@@ -99,7 +99,7 @@ I created a concept flowchart for my Hangman game using Lucid Chart.
 
 #### Surface
 * Due to the nature of this project, there was no design required. However, I created the Hangman logo using ASCII banner maker and also included the Hangman Gallows on startup of the program.
-* The game rules are displayed underneath the logo before the user is asked if they would like to play, and prompted to input Yes/No
+* The game rules are displayed underneath the logo before the user is asked if they would like to play, and prompted to input Yes/No.
 
 <details>
 <summary>Hangman Logo Banner</summary>
@@ -112,28 +112,58 @@ I created a concept flowchart for my Hangman game using Lucid Chart.
 
 ___
 
-### Page Features
+### Project Features
 
 #### Welcome
-PLACE SCREENGRAB HERE…
+![Screenshot of Hangman App](documentation/hangman_app_terminal_screenshot.png)
 
-The player is presented with the Welcome screen and shown the game rules
+The player is presented with the Welcome screen and shown the game rules. The player is asked if they would like to play. 
+
+If the user inputs N the program ends with a feedback message.
+
+![Screenshot of start feedback message](documentation/hangman_start_player_input_no.png)
+
+If the user inputs Y it starts the game.
 
 #### Game
-PLACE SCREENGRAB HERE…
+![Screenshot of Hangman game start](documentation/hangman_game_board_empty.png)
 
-The player is shown the empty Hangman Gallows along with the placeholders of the hidden word. The number of guesses remaining is displayed, and the player is prompted to enter a letter.
+The player is shown the empty Hangman Gallows along with the placeholders of the hidden word. The player is prompted to enter a letter.
+
+Once a letter is guessed the player receives feedback if their guess is in the word, and also a list of the letters they have already guessed so far.
+
+![Screenshot of Hangman game letter guesses](documentation/hangman_game_board_letter_guessed.png)
+
+<details>
+<summary>When the guessed letter is not in the word</summary>
+<br>
+
+![Screenshot of incorrect letter guess]()
+
+The player is notified that their guess is not in the word. This letter is then added to the list of letters already guessed.
+
+</details>
+
+<details>
+<summary>When the player guesses the same letter again</summary>
+<br>
+
+![Screenshot of already guessed letter]()
+
+The player is notified that their guess is not in the word. This letter is then added to the list of letters already guessed.
+
+</details>
 
 #### Game Over
-PLACE WIN SCREENGRAB HERE…
+![Screenshot of ]()
 
-PLACE LOSE SCREENGRAB HERE…
+![Screenshot of ]()
 
 If the player guesses the full word correctly they have won the game, and are congratulated. If the player runs out of guesses and completes the Hangman, they have lost the game.
 The player is asked if they would like to play again.
 
 #### Validating User input
-PLACE SCREENGRAB HERE…
+![Screenshot of ]()
 
 If the player enters an invalid input the game notifies the player and requests they enter the correct input
 
