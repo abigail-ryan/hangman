@@ -266,7 +266,7 @@ Heroku was used to deploy this Python project. I followed the below steps with g
 
 By forking the GitHub repository you can make a copy of the original repository to your own GitHub account. You can view and make changes to this copy, without affecting the original repository. Use the following steps to copy a repository:
 1. Log in to your GitHub account or sign up.
-2. Navigate to the GitHub Repository of this project, abigail-ryan/hangman
+2. Navigate to the GitHub Repository of this project, [abigail-ryan/hangman](https://github.com/abigail-ryan/hangman)
 3. At the top right of the Repository, just below your profile picture, find the "Fork" button.
 4. You should now have a copy of the original repository in your own GitHub account.
 5. Changes made to the forked repository can be merged with the original repository via a pull request.
@@ -275,7 +275,7 @@ By forking the GitHub repository you can make a copy of the original repository 
 
 You can create a local copy of this repository by cloning a GitHub Repository, on your computer. This will allow local edits, rather than directly in the source files of the original repository, Use following steps to make a clone:
 1. Log in to your GitHub account or sign up.
-2. Navigate to the GitHub Repository of this project, abigail-ryan/hangman
+2. Navigate to the GitHub Repository of this project, [abigail-ryan/hangman](https://github.com/abigail-ryan/hangman)
 3. Above the list of files, click on the dropdown item called "Code".
 4. To clone the repository using HTTPS, copy the link under "HTTPS".
 5. Open Git Bash.
@@ -292,10 +292,22 @@ ___
 
 #### Content and Code References
 
+* [Code Institute](https://codeinstitute.net/ie/) for the Python learning material and Love Sandwiches project walk through.
+* [Oleksii Kova](https://github.com/OleksiiKova/hangman) for the clearing terminal code.
+* [Kite](https://www.youtube.com/watch?v=m4nEnsavl6w) for the Hangman basic game functionality code which I studied and altered for my project.
+* [ASCII](https://manytools.org/hacker-tools/ascii-banner/) for the Hangman logo banner.
+* [Alice Hiller](https://github.com/alicehillier/rainforest-cafe/#deployment) for the forking and cloning a GitHub repository structure.
+* [Chris Horton](https://gist.github.com/chrishorton/8510732aa9a80a03c829b09f12e20d9c) for the hangman artwork
+* [Kera Cudmore - Creating your First README](https://github.com/kera-cudmore/readme-examples) for README content structure and Markdown language guidance.
+
 
 ___
 
 ### Acknowledgements
 
+I would like to thank the following:
+* My mentor, Mitko Bachvarov, for his help and guidance throughout this project.
+* My C.I. Cohort Facilitator, Amy Richardson, also for her guidance and support.
+* My family for their help testing my project and offering feedback.
 
 ___
