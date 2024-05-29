@@ -215,6 +215,8 @@ ___
 * Lucid Chart - used to create the concept flowchart for this project.
 * Git - used for version control.
 * GitHub - used to save and store all files for this project.
+* Import os - used to clear the terminal.
+* Import random - used to generate a random word for each new game.
 * Heroku - used for deploying this project.
 * PEP8 Validator - used for validating the Python code.
 
