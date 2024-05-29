@@ -184,11 +184,11 @@ print("    |      ")
 print("    ========")
 
 print("Hangman Game Rules:")
-print("- The computer generates a random word and you have to guess it letter by letter.")
+print("- The computer generates a random word, you have to guess it letter by letter.")
 print("- If you guess the correct letter, it will be placed on the game board.")
 print("- If you complete the word you win the game.")
-print("- If you guess the wrong letter, you'll lose a guess & add a piece to the Hangman.")
-print("- If you use up all your guesses and the Hangman is complete, you lose the game.\n")
+print("- If you guess the wrong letter, you lose a guess & add a piece to the Hangman.")
+print("- If you use up all your guesses & the Hangman is complete, you lose the game.\n")
 print("Do you want to play?")
 
 def play_choice():
