@@ -89,8 +89,8 @@ def play_again():
             play_game(word)
             return True
         elif play_again == "N":
+            print("Thank you for playing. Goodbye!")
             return False
-            break
         else:
             print("Invalid input. Please enter 'Y' or 'N'.")
 
@@ -153,7 +153,7 @@ def play_game(word):
         print(f"Sorry! You lost the game. The hidden word was {word}")
     else:
         print(f"Congratulations, you guessed the word: {word}. You win!")
-        # play_again()
+        play_again()
 
 
 def print_logo():
@@ -191,7 +191,6 @@ def play_choice():
     If user inputs invalid choice the loop runs until one of the options is selected.
     """
     while True:
-        # print("Do you want to play?")
         choice = input("Enter 'Y' for yes or 'N' for no: \n").upper()
         if choice == "Y" :
             clear_screen()
@@ -204,15 +203,10 @@ def play_choice():
             break
         else:
             print("Invalid option.")
-# play_choice()
 
 
 def main():
     play_choice()
-    word = get_random_word()
-    play_game(word)
-    if not play_again():
-        print("Thank you for playing. Goodbye!")
  
 
 main()
