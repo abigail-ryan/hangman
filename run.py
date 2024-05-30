@@ -22,6 +22,7 @@ def get_random_word():
 
 
 # Clearing terminal code credited to: https://github.com/OleksiiKova/hangman
+
 def clear_screen():
     """
     Clears the welcome screen and only shows the game play to the user.
@@ -29,12 +30,8 @@ def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
-"""
-
-Hangman artwork, altered for my project, credited to: https://gist.github.com/
-chrishorton/8510732aa9a80a03c829b09f12e20d9c
-"""
-
+# Hangman artwork, altered for my project, credited to:
+# https://gist.github.com/chrishorton/8510732aa9a80a03c829b09f12e20d9c
 
 def print_hangman(remaining_guesses):
     """
@@ -110,11 +107,8 @@ def play_again():
             print("Oops, That's not an option. Please enter 'Y' or 'N'.")
 
 
-"""
-Hangman basic game functionality code altered for my project,
-credited to: https://www.youtube.com/watch?v=m4nEnsavl6w
-"""
-
+# Hangman basic game functionality code altered for my project,
+# credited to: https://www.youtube.com/watch?v=m4nEnsavl6w
 
 def play_game(word):
     completed_word = "_" * len(word)
@@ -165,7 +159,7 @@ def play_game(word):
                 print(completed_word)
                 print("\n")
                 print(f"Yay! There is 1 or more {player_guess} in this word!")
-                print(f"Letters guessed so far: {', '.join(guessed_letters)}\n")
+                print(f"Letters guessed so far: {','.join(guessed_letters)}\n")
 
                 if "_" not in completed_word:
                     guessed = True
@@ -181,11 +175,8 @@ def play_game(word):
         print(f"Congratulations, you guessed the word: {word}. You win!")
 
 
-"""
-Hangman logo banner sourced from: https://manytools.org/
-hacker-tools/ascii-banner/
-"""
-
+# Hangman logo banner sourced from: https://manytools.org/
+# hacker-tools/ascii-banner/
 
 def print_logo():
     """
