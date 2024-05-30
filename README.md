@@ -145,7 +145,7 @@ Once a letter is guessed the player receives feedback if their guess is in the w
 <summary>When the guessed letter is not in the word</summary>
 <br>
 
-The player is notified that their guess is not in the word. This letter is then added to the list of letters already guessed.
+The player is notified that their guess is not in the word. A section is added to the Hangman and this letter is then added to the list of letters already guessed.
 
 ![Screenshot of incorrect letter guess](documentation/hangman_incorrect_letter.png)
 
@@ -189,7 +189,11 @@ Player recieves notice if they have tried to input anything other than "Y" or "N
 
 The player recieves notice if they have tried to input anything other than a letter of the alphabet during game play.
 
-![Screenshot of validating player input start game](documentation/hangman_letter_guess_validation.png)
+![Screenshot of validating player input during game](documentation/hangman_letter_guess_validation.png)
+
+Player recieves notice if they have tried to input anything other than "Y" or "N" on play again options.
+
+![Screenshot of validating player input play again option](documentation/hangman_game_end_validation.png)
 
 </details>
 
@@ -243,6 +247,7 @@ ___
 | After 6 incorrect guesses | The Hangman is complete, player receives message “Sorry! You lost the game. The hidden word was ‘WORD’. Do you want to play again? (Y/N):” | Yes |
 | Play again choice: "Y" | Clears terminal and starts new game | Yes |
 | Play again choice: "N" | Player receives message “Thank you for playing. Goodbye!”. Program ends | Yes |
+| Player inputs letter/symbol not expected | Player receives message "Oops, That's not an option. Please enter 'Y' or 'N'. Do you want to play again? (Y/N):" | Yes |
 
 
 #### Pep8 Code Validation
